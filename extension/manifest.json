@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "LeetPet Tamagotchi",
+  "description": "Grow a Tamagotchi by solving LeetCode problems and maintaining daily streaks.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "LeetPet",
+    "default_popup": "popup/index.html"
+  },
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "options_page": "options/index.html",
+  "permissions": [
+    "storage",
+    "notifications",
+    "alarms",
+    "identity",
+    "cookies",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://leetcode.cn/*"
+  ],
+  "commands": {
+    "refresh-leetpet": {
+      "description": "Refresh LeetPet stats and feed the pet",
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L"
+      }
+    }
+  }
+}

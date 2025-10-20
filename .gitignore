@@ -1,0 +1,11 @@
+# Tmux local files
+.tmux.conf.local
+.tmux.conf.backup
+.tmux.conf.*
+.tmux-resurrect/
+.tmux/
+.tmux-*
+
+# Tmux sockets (often created in /tmp or your home dir)
+*.tmux-socket
+*.tmux.lock

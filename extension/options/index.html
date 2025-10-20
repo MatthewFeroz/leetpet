@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LeetPet Settings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>LeetPet Settings</h1>
+      <section class="card">
+        <h2>Pet Profile</h2>
+        <form id="profile-form">
+          <label>
+            Pet name
+            <input type="text" id="pet-name-input" maxlength="24" required />
+          </label>
+          <button type="submit" class="primary">Save</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Data</h2>
+        <button id="reset-button" class="danger">Reset pet progress</button>
+        <p class="hint">
+          Resetting clears XP, streaks, and cached LeetCode stats. You will need to sync again after
+          logging into LeetCode.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>LeetCode session</h2>
+        <p id="auth-status">Checking authentication…</p>
+        <button id="open-leetcode" class="secondary">Open LeetCode</button>
+      </section>
+    </main>
+
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

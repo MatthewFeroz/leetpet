@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LeetPet</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">LeetPet</h1>
+      <button class="icon-button" id="refresh-button" title="Refresh stats">⟳</button>
+    </header>
+
+    <section class="auth-banner" id="auth-banner">
+      <p>Sign in to LeetCode to feed your pet.</p>
+      <button id="login-button" class="primary">Log in</button>
+    </section>
+
+    <section class="pet-card">
+      <div class="pet-visual">
+        <div class="pet-sprite" id="pet-sprite"></div>
+      </div>
+      <div class="pet-info">
+        <h2 id="pet-name">Algochi</h2>
+        <p id="pet-status">Solve a challenge to feed your pet!</p>
+      </div>
+    </section>
+
+    <section class="progress">
+      <div class="progress-row">
+        <span>Level</span>
+        <span id="pet-level">1</span>
+      </div>
+      <div class="progress-row">
+        <span>XP</span>
+        <div class="progress-bar">
+          <div class="progress-fill" id="xp-bar"></div>
+        </div>
+        <span id="xp-numbers">0 / 120</span>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <span class="label">Solved</span>
+        <span id="stat-total">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Streak</span>
+        <span id="stat-streak">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Daily</span>
+        <span id="stat-daily">Incomplete</span>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="feed-button" class="primary">Feed (manual)</button>
+      <a href="https://leetcode.com/problemset/all/" target="_blank" rel="noopener" class="secondary">
+        Solve on LeetCode
+      </a>
+    </section>
+
+    <footer class="footer">
+      <a href="../options/index.html" target="_blank" rel="noopener">Settings</a>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
